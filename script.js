@@ -49,7 +49,18 @@ console.log(changeUrls('https://www.google.com')
  Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
 */
 
-const addToTheSecond = function () { }
+            
+const addToTheSecond = function () { 
+    const secondList = document.getElementById('secondList')
+
+    let newLi = document.createElement('li');
+
+    secondList.appendChild(newLi)
+
+}
+
+console.log(addToTheSecond())
+
 
 /* ESERCIZIO 6
  Scrivi una funzione che aggiunga un paragrafo al primo div
