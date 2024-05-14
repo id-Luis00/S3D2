@@ -34,10 +34,17 @@ console.log('paragrafo del primo div ------------>', changePcontent('prova di in
  Scrivi una funzione che cambi la proprietà href di ogni link (tranne quello nel footer) con il valore https://www.google.com
 */
 
-const changeUrls = function () { 
-    
+const changeUrls = function (newURL) { 
+
+    const allAnchors = document.getElementsByTagName('a');
+
+    for(i = 0; i < allAnchors.length; i++) {
+        allAnchors[i].setAttribute('href', newURL);
+        
+    }
 }
 
+console.log(changeUrls('https://www.google.com')
 /* ESERCIZIO 5
  Scrivi una funzione che aggiunga un nuovo elemento lista alla seconda lista non ordinata
 */
